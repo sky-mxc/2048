@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.skymxc.demo.a2048.MainActivity">
+
+    <TextView
+        android:id="@+id/max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:background="@color/colorPrimaryDark"
+        android:minWidth="100dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:text="0步"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:background="@color/colorPrimaryDark"
+        android:minWidth="100dp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/max">
+
+
+        <Button
+            android:id="@+id/buttonResetStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="重新开始"
+            android:textAllCaps="false"/>
+
+
+        <Spinner
+            android:id="@+id/column"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#cdcdcd"
+            android:entries="@array/column"></Spinner>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#999">
+
+    </GridLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="column">
+        <item>4X4</item>
+        <item>5X5</item>
+        <item>6X6</item>
+    </string-array>
+</resources>
